@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "public/index.html",
+    "public/bundle.js"
+  ]
+}
