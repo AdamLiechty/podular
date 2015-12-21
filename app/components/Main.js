@@ -1,12 +1,12 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 const { Router, Route, Link } = require('react-router');
-const browserHistory = require('history/lib/createBrowserHistory')()
+const createBrowserHistory = require('history/lib/createBrowserHistory')
 
 const Routes = React.createClass({
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router history={createBrowserHistory()}>
         <Route path="/" component={require('./App')}>
           <Route path="about" component={require('./About')}/>
           <Route path="podcasts/" component={require('./Podcasts')}>
