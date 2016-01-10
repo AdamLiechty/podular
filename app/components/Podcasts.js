@@ -5,6 +5,7 @@ module.exports = React.createClass({
     return (
       <div>
         Podcasts
+        {this.props.children}
       </div>
     )
   }

@@ -6,7 +6,7 @@ const config = require('config');
 
 if (config.webpack.onStart) {
   const childProcess = require('child_process');
-  childProcess.exec('webpack')
+  childProcess.exec('webpack -w');
 }
 
 app.use(express.static(__dirname + '/public'));
