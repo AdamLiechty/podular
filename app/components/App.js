@@ -7,7 +7,7 @@ const Routes = React.createClass({
   render() {
     return (
       <Router history={createBrowserHistory()}>
-        <Route path="/" component={require('./App')}>
+        <Route path="/" component={require('./Main')}>
           <Route path="about" component={require('./About')}/>
           <Route path="podcasts" component={require('./Podcasts')}>
             <Route path=":podcastId" component={require('./Podcast')}>
